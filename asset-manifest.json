@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/petermeshack/lanceconsoltant.gitnub.io/static/css/main.331fadd1.css",
-    "main.js": "/petermeshack/lanceconsoltant.gitnub.io/static/js/main.bb69b252.js",
+    "main.js": "/petermeshack/lanceconsoltant.gitnub.io/static/js/main.06d6f479.js",
     "static/js/787.fe4a3684.chunk.js": "/petermeshack/lanceconsoltant.gitnub.io/static/js/787.fe4a3684.chunk.js",
     "static/media/image_5.png": "/petermeshack/lanceconsoltant.gitnub.io/static/media/image_5.a4aa16493af2986f4bf0.png",
     "static/media/image_7.png": "/petermeshack/lanceconsoltant.gitnub.io/static/media/image_7.7103706d7f3f9efe1213.png",
@@ -14,11 +14,11 @@
     "static/media/linkedin.png": "/petermeshack/lanceconsoltant.gitnub.io/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/petermeshack/lanceconsoltant.gitnub.io/index.html",
     "main.331fadd1.css.map": "/petermeshack/lanceconsoltant.gitnub.io/static/css/main.331fadd1.css.map",
-    "main.bb69b252.js.map": "/petermeshack/lanceconsoltant.gitnub.io/static/js/main.bb69b252.js.map",
+    "main.06d6f479.js.map": "/petermeshack/lanceconsoltant.gitnub.io/static/js/main.06d6f479.js.map",
     "787.fe4a3684.chunk.js.map": "/petermeshack/lanceconsoltant.gitnub.io/static/js/787.fe4a3684.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.331fadd1.css",
-    "static/js/main.bb69b252.js"
+    "static/js/main.06d6f479.js"
   ]
 }
