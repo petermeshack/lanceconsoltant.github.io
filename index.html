@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LanceConsultants</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Consistent Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-[#020617] text-white shadow-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-10 h-10 rounded-lg bg-amber-600 flex items-center justify-center text-[#020617] font-bold text-xl shadow-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:text-amber-500 transition">Lance<span class="text-amber-500">Consultants</span></span>
+                    <span class="block text-xs text-slate-400 font-light">Financial & Business Advisory</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="index.html" class="text-amber-500 transition py-2 border-b-2 border-amber-500">Home</a>
+                <a href="aboutus.html" class="text-slate-300 hover:text-amber-500 transition py-2 border-b-2 border-transparent">About Us</a>
+                <a href="contact.html" class="text-slate-300 hover:text-amber-500 transition py-2 border-b-2 border-transparent">Contact Us</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-[#020617] font-semibold px-5 py-2.5 rounded-lg shadow transition transform hover:-translate-y-0.5">
+                    Get in Touch
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button onclick="toggleMobileMenu()" class="text-slate-300 hover:text-white focus:outline-none p-2 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] border-t border-slate-800 px-4 pt-3 pb-5 space-y-3">
+            <a href="index.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">Home</a>
+            <a href="aboutus.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">About Us</a>
+            <a href="contact.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow animate-fadeIn">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#020617] via-[#0f172a] to-slate-900 text-white py-24 lg:py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-500 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-shield-halved"></i> <span>Professional Consultancy</span>
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            Welcome to <span class="text-amber-500">LanceConsultants</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed">
+                            Welcome to LanceConsultants for financial advice. Ben Consultants: My background is in finance, accounting, tax, and general business advisory, and I have recently expanded my portfolio to include internal audit and risk management.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="aboutus.html" class="bg-amber-600 hover:bg-amber-700 text-[#020617] font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center justify-center space-x-2">
+                                <span>Learn More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.html" class="bg-transparent hover:bg-white/10 text-white border border-slate-600 font-semibold px-8 py-4 rounded-xl transition flex items-center justify-center">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800">
+                            <img src="media/watermarked_img_18345102711463077590.jpg" alt="LanceConsultants Nairobi office" class="w-full h-[400px] sm:h-[450px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#020617]/80 via-transparent to-transparent flex items-end p-6">
+                                <div class="text-white">
+                                    <p class="text-sm font-medium text-amber-500">Nairobi, Kenya</p>
+                                    <h3 class="text-xl font-bold">Empowering Businesses & Government Entities</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                    <h2 class="text-3xl font-bold text-[#020617]">LanceConsultants</h2>
+                    <p class="text-lg text-slate-600">
+                        As a financial and policy expert, we want to help our clients maximize on their investments.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#020617] mb-3">Finance & Advisory</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Budget development, grants management, and robust cost-benefit analysis designed to optimize government and corporate expenditures.
+                        </p>
+                        <a href="aboutus.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center space-x-1">
+                            <span>Explore Services</span> <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#020617] mb-3">Accounting & Tax</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Evidence-based policy approaches and precise accounting strategies to define your financial goals, evaluate options, and implement impactful solutions.
+                        </p>
+                        <a href="aboutus.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center space-x-1">
+                            <span>Explore Services</span> <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                        <div class="w-14 h-14 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-shield-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#020617] mb-3">Audit & Risk Management</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Safeguarding assets and ensuring complete compliance through meticulous internal audit frameworks and proactive risk mitigation.
+                        </p>
+                        <a href="aboutus.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center space-x-1">
+                            <span>Explore Services</span> <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase CTA Banner -->
+        <section class="py-16 bg-[#0f172a] text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+                <h2 class="text-3xl font-bold tracking-tight">Explore Our Portfolio & Track Record</h2>
+                <p class="max-w-2xl mx-auto text-slate-300 text-base">
+                    See some of my projects to date. Contact me if you’d like to ask more about or work, or enquire about a project you need help with.
+                </p>
+                <div class="pt-2">
+                    <a href="aboutus.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-[#020617] font-semibold px-8 py-3.5 rounded-xl shadow transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer class="bg-[#020617] text-slate-400 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-800/80">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded bg-amber-600 flex items-center justify-center text-[#020617] font-bold">
+                        <i class="fa-solid fa-chart-line text-sm"></i>
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-tight">LanceConsultants</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    As a financial and policy expert, we want to help our cliants maximize on their investments.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Address</h4>
+                <div class="space-y-2 text-sm">
+                    <p class="text-slate-300">H and H block Eastlands</p>
+                    <p class="text-slate-300">Nairobi Kenya</p>
+                    <p class="mt-4"><strong class="text-white">Phone:</strong> 0735622640</p>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">About me</h4>
+                <p class="text-sm leading-relaxed">
+                    Finance and general business advisory, accounting, tax, internal audit and risk management Nairobi
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+            <p>Copyright © 2023-2026 consultants.com</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                <a href="aboutus.html" class="hover:text-amber-500 transition">About Us</a>
+                <a href="contact.html" class="hover:text-amber-500 transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

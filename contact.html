@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LanceConsultants</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Consistent Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-[#020617] text-white shadow-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-10 h-10 rounded-lg bg-amber-600 flex items-center justify-center text-[#020617] font-bold text-xl shadow-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white group-hover:text-amber-500 transition">Lance<span class="text-amber-500">Consultants</span></span>
+                    <span class="block text-xs text-slate-400 font-light">Financial & Business Advisory</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-amber-500 transition py-2 border-b-2 border-transparent">Home</a>
+                <a href="aboutus.html" class="text-slate-300 hover:text-amber-500 transition py-2 border-b-2 border-transparent">About Us</a>
+                <a href="contact.html" class="text-amber-500 transition py-2 border-b-2 border-amber-500">Contact Us</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-[#020617] font-semibold px-5 py-2.5 rounded-lg shadow transition transform hover:-translate-y-0.5">
+                    Get in Touch
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button onclick="toggleMobileMenu()" class="text-slate-300 hover:text-white focus:outline-none p-2 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] border-t border-slate-800 px-4 pt-3 pb-5 space-y-3">
+            <a href="index.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">Home</a>
+            <a href="aboutus.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">About Us</a>
+            <a href="contact.html" class="block w-full text-left py-2 px-3 rounded hover:bg-slate-800 text-white font-medium">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow animate-fadeIn">
+        <section class="bg-[#020617] text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+                <h1 class="text-4xl font-extrabold tracking-tight">Contact Us</h1>
+                <p class="max-w-2xl mx-auto text-slate-300 text-lg">
+                    Placeholder
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
+                    
+                    <!-- Contact Form -->
+                    <div class="md:col-span-7 p-8 lg:p-12">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">First Name</label>
+                                    <input type="text" id="first-name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="First Name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Last Name</label>
+                                    <input type="text" id="last-name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Email">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                                <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition" placeholder="Message"></textarea>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button type="submit" id="submit-btn" class="bg-amber-600 hover:bg-amber-700 text-[#020617] font-bold px-8 py-3.5 rounded-lg shadow-md transition w-full sm:w-auto">
+                                    SEND
+                                </button>
+                            </div>
+                            <div id="form-success-msg" class="hidden p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-sm">
+                                <i class="fa-solid fa-circle-check mr-2"></i> Thank you! Your message has been sent successfully.
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Sidebar Info / HOME Links -->
+                    <div class="md:col-span-5 bg-[#0f172a] text-white p-8 lg:p-12 flex flex-col justify-between space-y-8">
+                        <div>
+                            <div class="space-y-4 text-sm">
+                                <!-- <p class="text-slate-300">None</p> -->
+                                <!-- <p class="text-slate-300">None</p> -->
+                                <!-- <p class="text-slate-300">None</p> -->
+                                <!-- <p class="text-slate-300">None</p> -->
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-slate-800">
+                            <a href="index.html" class="inline-flex items-center space-x-2 text-amber-500 font-semibold hover:underline">
+                                <i class="fa-solid fa-house"></i>
+                                <span>HOME</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer class="bg-[#020617] text-slate-400 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-800/80">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded bg-amber-600 flex items-center justify-center text-[#020617] font-bold">
+                        <i class="fa-solid fa-chart-line text-sm"></i>
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-tight">LanceConsultants</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    As a financial and policy expert, we want to help our cliants maximize on their investments.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Address</h4>
+                <div class="space-y-2 text-sm">
+                    <p class="text-slate-300">H and H block Eastlands</p>
+                    <p class="text-slate-300">Nairobi Kenya</p>
+                    <p class="mt-4"><strong class="text-white">Phone:</strong> 0735622640</p>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">About me</h4>
+                <p class="text-sm leading-relaxed">
+                    Finance and general business advisory, accounting, tax, internal audit and risk management Nairobi
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+            <p>Copyright © 2023-2026 consultants.com</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                <a href="aboutus.html" class="hover:text-amber-500 transition">About Us</a>
+                <a href="contact.html" class="hover:text-amber-500 transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
